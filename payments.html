@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UbuWell Total Health | Payments</title>
+<meta content="UbuWell Total Health" name="description"/>
+<meta content="UbuWell Total Health" name="keywords"/>
+<!-- Favicons -->
+<link href="assets/img/favicon.png" rel="icon"/>
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet"/>
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+<link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+<link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+<!-- Main CSS File -->
+<link href="assets/css/main.css" rel="stylesheet"/>
+</head>
+<body class="payments-page">
+<div class="topbar"><div class="container"><div class="topbar-inner"><nav aria-label="Primary"><ul class="nav justify-content-center site-nav-links"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li><li class="nav-item"><a class="nav-link" href="services.html">Services</a></li><li class="nav-item"><a class="nav-link" href="doctors.html">Our Team</a></li><li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li><li class="nav-item"><a class="active nav-link" href="payments.html">Payments</a></li></ul></nav></div></div></div>
+<main class="main">
+<div class="page-title">
+<div class="heading">
+<div class="container">
+<div aria-hidden="false" class="hero-logo"><img alt="UbuWell Total Health logo" src="assets/img/ubuwell-logo-side.png"/></div>
+<div class="row d-flex justify-content-center text-center">
+<div class="col-lg-8">
+<h1 class="heading-title">Payments</h1>
+<p class="mb-0">Securely submit your payment information below.</p>
+</div>
+</div>
+</div>
+</div>
+<nav class="breadcrumbs">
+<div class="container">
+<ol>
+<li><a href="index.html">Home</a></li>
+<li class="current">Payments</li>
+</ol>
+</div>
+</nav>
+</div>
+<section class="section light-background payments-section" id="payments">
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="payments-card">
+<div class="accepted-cards mb-4 text-center">
+<h3 class="mb-3">We accept major credit cards</h3><p>Select one or more services. You will be redirected to Stripe to enter payment and billing information securely.</p>
+<div class="card-icons">
+<i aria-hidden="true" class="fab fa-cc-visa"></i>
+<i aria-hidden="true" class="fab fa-cc-mastercard"></i>
+<i aria-hidden="true" class="fab fa-cc-amex"></i>
+<i aria-hidden="true" class="fab fa-cc-discover"></i>
+</div>
+</div>
+<form action="#" class="stripe-payment-form" id="payment-form" method="post" novalidate="">
+<div class="row gy-3">
+
+
+
+
+
+<div class="col-12">
+<label class="form-label">Services</label>
+<details class="form-multiselect" id="payment-services">
+<summary aria-controls="payment-service-options" id="payment-services-summary">Select one or more services</summary>
+<div class="form-multiselect-options" id="payment-service-options">
+<div class="form-multiselect-group">Primary Care Services</div>
+<label class="form-check service-option"><input class="form-check-input" data-label="Primary Care Services" data-price="125" name="services[]" type="checkbox" value="Primary-Care-Visit"/><span>Primary Care Services — $125</span></label>
+<label class="form-check service-option"><input class="form-check-input" data-label="Lab Review and Wellness Planning" data-price="99" name="services[]" type="checkbox" value="Lab-Review-Wellness-Planning"/><span>Lab Review and Wellness Planning — $99</span></label>
+<div class="form-multiselect-group">Acute Illness &amp; Injury Care</div>
+<label class="form-check service-option"><input class="form-check-input" data-label="Same Day" data-price="120" name="services[]" type="checkbox" value="acute-same-day"/><span>Same Day — $120</span></label>
+<label class="form-check service-option"><input class="form-check-input" data-label="Telemedicine" data-price="100" name="services[]" type="checkbox" value="acute-telemedicine"/><span>Telemedicine — $100</span></label>
+<label class="form-check service-option"><input class="form-check-input" data-label="Extended (45-60 mins)" data-price="150" name="services[]" type="checkbox" value="acute-extended"/><span>Extended (45-60 mins) — $150</span></label>
+<label class="form-check service-option"><input class="form-check-input" data-label="After Hours" data-price="200" name="services[]" type="checkbox" value="acute-after-hours"/><span>After Hours — $200</span></label>
+<div class="form-multiselect-group">Mental Health &amp; Behavioral Support</div>
+<label class="form-check service-option"><input class="form-check-input" data-label="Initial Psychiatric Evaluation" data-price="350" name="services[]" type="checkbox" value="psychiatric-evaluation"/><span>Initial Psychiatric Evaluation — $350</span></label>
+<label class="form-check service-option"><input class="form-check-input" data-label="Psychiatric Follow-Up" data-price="150" name="services[]" type="checkbox" value="Psychiatric-Follow-Up"/><span>Psychiatric Follow-Up — $150</span></label>
+<div class="form-multiselect-group">Medication Management</div>
+<label class="form-check service-option"><input class="form-check-input" data-label="Medication Management" data-price="99" name="services[]" type="checkbox" value="Medication-Management"/><span>Medication Management — $99</span></label>
+<div class="form-multiselect-group">Women’s &amp; Men’s Health</div>
+<label class="form-check service-option"><input class="form-check-input" data-label="Menopause Initial Evaluation" data-price="249" name="services[]" type="checkbox" value="Menopause Consultation"/><span>Menopause Initial Evaluation — $249</span></label>
+<label class="form-check service-option"><input class="form-check-input" data-label="Menopause Follow-Up" data-price="129" name="services[]" type="checkbox" value="Menopause-Follow-Up"/><span>Menopause Follow-Up — $129</span></label>
+<div class="form-multiselect-group">Weight Management</div>
+<label class="form-check service-option"><input class="form-check-input" data-label="Weight Management Initial Evaluation" data-price="199" name="services[]" type="checkbox" value="Weight-Loss-Consultation"/><span>Initial Evaluation — $199</span></label>
+<label class="form-check service-option"><input class="form-check-input" data-label="Weight Management Follow-Up" data-price="99" name="services[]" type="checkbox" value="Weight-Loss-Follow-Up"/><span>Follow-Up — $99</span></label>
+<div class="form-multiselect-group">Physical Examinations</div>
+<label class="form-check service-option"><input class="form-check-input" data-label="DOT Physical" data-price="99" name="services[]" type="checkbox" value="dot-physical"/><span>DOT Physical — $99</span></label>
+<label class="form-check service-option"><input class="form-check-input" data-label="Sports Physical" data-price="40" name="services[]" type="checkbox" value="sports-physical"/><span>Sports Physical — $40</span></label>
+</div>
+</details>
+<div class="small text-danger mt-2" hidden="" id="payment-service-error">Select at least one service.</div>
+</div>
+<div class="col-md-6">
+<label class="form-label" for="payment-amount">Amount</label>
+<input aria-label="Selected services total" aria-live="polite" class="form-control" id="payment-amount" name="amount" placeholder="0.00" readonly="" step="0.01" type="number" value="0.00"/>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div aria-live="polite" class="small mt-3" hidden="" id="checkout-status" role="status"></div><div class="small text-danger mt-2" hidden="" id="checkout-error" role="alert"></div><div class="col-12">
+<button class="btn btn-primary" id="payment-button" type="submit">Continue to Secure Payment</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script>
+    (function () {
+      'use strict';
+
+      var CHECKOUT_ENDPOINT = 'https://ubuwell-stripe-checkout-test.cfogle.workers.dev/';
+      var form = document.getElementById('payment-form');
+      var servicePicker = document.getElementById('payment-services');
+      var summary = document.getElementById('payment-services-summary');
+      var amount = document.getElementById('payment-amount');
+      var serviceError = document.getElementById('payment-service-error');
+      var checkoutError = document.getElementById('checkout-error');
+      var checkoutStatus = document.getElementById('checkout-status');
+      var paymentButton = document.getElementById('payment-button');
+      var services = Array.from(form.querySelectorAll('input[name="services[]"]'));
+
+      function selectedServices() {
+        return services.filter(function (service) { return service.checked; });
+      }
+
+      function updatePaymentTotal() {
+        var selected = selectedServices();
+        var total = selected.reduce(function (sum, service) {
+          return sum + Number(service.dataset.price || 0);
+        }, 0);
+
+        amount.value = total.toFixed(2);
+        serviceError.hidden = selected.length > 0;
+
+        if (selected.length === 0) {
+          summary.textContent = 'Select one or more services';
+        } else if (selected.length === 1) {
+          summary.textContent = selected[0].dataset.label;
+        } else {
+          summary.textContent = selected.length + ' services selected';
+        }
+      }
+
+      services.forEach(function (service) {
+        service.addEventListener('change', updatePaymentTotal);
+      });
+
+      form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        var selected = selectedServices();
+        checkoutError.hidden = true;
+        checkoutError.textContent = '';
+
+        if (selected.length === 0) {
+          servicePicker.open = true;
+          serviceError.hidden = false;
+          services[0].focus();
+          return;
+        }
+
+        paymentButton.disabled = true;
+        paymentButton.textContent = 'Opening Secure Checkout...';
+        checkoutStatus.textContent = 'Connecting to Stripe securely. Please wait.';
+        checkoutStatus.hidden = false;
+
+        try {
+          var response = await fetch(CHECKOUT_ENDPOINT, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              services: selected.map(function (service) { return service.value; })
+            })
+          });
+
+          var result = await response.json().catch(function () { return {}; });
+
+          if (!response.ok) {
+            throw new Error(result.error || 'The payment session could not be created.');
+          }
+
+          if (!result.checkoutUrl) {
+            throw new Error('Stripe did not return a secure checkout address.');
+          }
+
+          window.location.assign(result.checkoutUrl);
+        } catch (error) {
+          console.error('Stripe Checkout error:', error);
+          checkoutStatus.hidden = true;
+          checkoutError.textContent = error.message || 'The payment page could not be opened. Please try again.';
+          checkoutError.hidden = false;
+          paymentButton.disabled = false;
+          paymentButton.textContent = 'Continue to Secure Payment';
+        }
+      });
+
+      updatePaymentTotal();
+    })();
+</script>
+</main>
+<footer class="footer-16 footer position-relative" id="footer">
+<div class="container">
+<div class="footer-main" data-aos="fade-up" data-aos-delay="100">
+<div class="row align-items-start">
+<div class="col-lg-5">
+<div class="brand-section">
+<a class="logo d-flex align-items-center mb-4" href="index.html"><span class="sitename">UbuWell Total Health</span>
+</a>
+<div class="contact-info mt-5"><div class="contact-item"><i class="bi bi-person"></i><span>Abbey Jowan Ngaima-Johnson</span></div><div class="contact-item"><i class="bi bi-award"></i><span>MSN,APRN,FNP-C, PMHNP-BC</span></div><div class="contact-item"><i class="bi bi-telephone"></i><span>+1 682-353-8161</span></div><div class="contact-item"><i class="bi bi-clock"></i><span>Monday - Friday 9:00 AM - 5:00 PM</span></div><div class="contact-item"><i class="bi bi-shield-lock"></i><span>HIPAA secure telehealth</span></div></div>
+</div>
+</div>
+<div class="col-lg-7">
+<div class="footer-nav-wrapper">
+<div class="row">
+<div class="col-6 col-lg-3">
+<div class="nav-column">
+<nav class="footer-nav">
+</nav>
+<h6><a href="doctors.html">Our Team</a></h6></div>
+</div>
+<div class="col-6 col-lg-3">
+<div class="nav-column">
+<h6><a href="services.html">Services</a></h6>
+</div>
+</div>
+<div class="col-6 col-lg-3">
+<div class="nav-column">
+<h6><a href="resources.html">Resources</a></h6>
+</div>
+</div>
+<div class="col-6 col-lg-3">
+<div class="nav-column">
+<h6><a href="contact.html">Contact Us</a></h6>
+<nav class="footer-nav">
+</nav>
+</div>
+</div>
+</div><div class="footer-hotline"><strong>Suicide Prevention Hotline:</strong> <a href="tel:+18002738255">1-800-273-TALK (8255)</a> <span class="hotline-or">or</span> <a href="tel:988">988</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">
+<div class="bottom-content" data-aos="fade-up" data-aos-delay="300">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<div class="copyright">
+<p>© <span class="sitename">UbuWell Total Health</span>. All rights reserved.</p>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="legal-links">
+<a href="#!">Privacy Policy</a>
+<a href="#!">Terms of Service</a>
+<a href="#!">Cookie Policy</a>
+<div class="credits">designed and launched by Dotcom Online</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Scroll Top -->
+<a class="scroll-top d-flex align-items-center justify-content-center" href="#!" id="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Preloader -->
+<div id="preloader"></div>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
