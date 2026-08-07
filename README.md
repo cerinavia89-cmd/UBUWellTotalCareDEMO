@@ -59,6 +59,6 @@ stripeBody.append(
 
 The live website origin is `https://ubuwelltotalhealth.com`. Keep `{CHECKOUT_SESSION_ID}` exactly as written so Stripe can insert the Checkout Session ID.
 
-Site deployment refresh
 The page confirms that the patient returned from Stripe, provides receipt guidance, and explains that payment does not itself schedule an appointment. A successful-page redirect should not be treated as the clinic’s authoritative payment record; Stripe Dashboard or a verified `checkout.session.completed` webhook should be used for confirmation.
 
+Site deployment refresh
